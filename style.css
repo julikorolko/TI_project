@@ -1,0 +1,101 @@
+:root {
+    --success-color: rgb(90, 238, 102);
+    --error-color: rgba(252, 29, 5, 0.938);
+}
+body {
+	font-family: Arial, sans-serif;
+	background: url("images/books.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	padding: 38px 0;
+}
+
+.container {
+	width: 700px;
+	margin: auto;
+	padding: 20px 50px;
+}
+
+header .container {
+    display: flex;
+    flex-direction:row;    
+	background: rgba(165, 137, 95, 0.9);
+}
+
+h1{
+	color: #fff; 
+    display: flex;
+    justify-content: center;   
+}
+
+.logo {
+width: 100px;
+height: 100px;
+}
+
+main .container {
+	background: rgba(255, 255, 255, .8);
+}
+
+input, select, textarea, button {
+	width: 100%;
+	height: 30px;
+	margin: 5px 0 15px 0;	
+}
+
+.short-input {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+input[type=radio] {
+	width: 15px;
+	height: 15px;
+}
+
+select {
+    width: 708px;
+    height: 40px;
+}
+
+textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+
+button {
+    width: 708px;
+	height: 40px;
+	background: rgba(165, 137, 95, 0.9);
+	border: 2px solid rgba(165, 137, 95, 0.9);
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+	cursor: pointer;    
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color:  var(--error-color);    
+    left: 0;
+    visibility: hidden;
+    margin-top: 5px;
+	position: relative;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
