@@ -98,8 +98,10 @@
                     <input type="password" id="pwd2" name="pwd2" required><br>
 					<small>Error message</small>
                     </div>
-                    <button name="submit">Submit</button>		
-					
+                    <button name="submit">Submit</button>
+					<div class="bd">
+					<a href="display_records.php">Baza Danych</a> (dostęp tylko dla administracji biblioteki)
+					</div>
 				</form>
 			</section>
 			
